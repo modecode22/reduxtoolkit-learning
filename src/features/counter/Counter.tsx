@@ -39,14 +39,14 @@ const resetAll = ()=>{
           add amount
         </div>
         <input
-        className='w-16 font-black border-2 border-black rounded-lg shadow-sm shadow-black'
+          className="w-16 font-black border-2 border-black rounded-lg shadow-sm shadow-black"
           type="text"
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
         <div
           className=" text-2xl font-black rounded-lg shadow-sm shadow-black hover:shadow-none hover:bg-black hover:text-orange-500 duration-300 cursor-pointer bg-orange-500 text-white  flex items-center justify-center"
-          onClick={() => dispatch(incrementByAmount(addValue))}
+          onClick={() => resetAll()}
         >
           reset
         </div>
